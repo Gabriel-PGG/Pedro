@@ -1,0 +1,120 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0b4280;
+    background: linear-gradient(
+      90deg,
+      rgba(11, 66, 128, 1) 15%,
+      rgba(0, 212, 255, 1) 70%
+    );
+  }
+  /* Container Centralizado */
+  .container,
+  form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .container2 {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  
+  /* Título */
+  h1,
+  h2,
+  h3 {
+    /* text-align: center;
+    background: linear-gradient(90deg, #23384e, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    text-align: center;
+    background: linear-gradient(90deg, #282525, #071544);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Formulários */
+  form input[type="email"],
+  form input[type="password"],
+  form input[type="date"],
+  form input[type="number"],
+  form button,
+  form input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Botões */
+  button,
+  input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Tabela */
+  table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  /* Dialog */
+  dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+  }
+  
+  menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  menu button {
+    width: 48%;
+  }
+  
+  form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }

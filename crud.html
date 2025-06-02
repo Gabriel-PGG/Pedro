@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD de Temperaturas</title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <div class="container2">
+    <h2>Cadastro de Temperatura</h2>
+
+    <form id="form">
+      <input 
+      type="date"
+      id="data" 
+      required/>
+
+      <input type="number" 
+      id="temp" 
+      placeholder="Temperatura (°C)" 
+      required/>
+
+  
+      <button id="btnSalvar">Salvar</button>
+      <button id="btnListar">Listar</button>
+
+    </form>
+
+    <h3>Registros</h3>
+    <table border="1" id="tabela">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Temperatura</th>
+          <th>Ações</th>
+        </tr>
+        <tbody></tbody>
+      </thead>
+    </table>
+    </div>
+
+    <dialog id="dialogEditar">
+      <form method="dialog">
+        <h3>Editar Registro</h3>
+        <input 
+        type="date" 
+        id="editarData" 
+        required />
+
+        <input
+          type="number"
+          id="editarTemp"
+          placeholder="Temperatura (°C)"
+          required/>
+
+        <menu>
+          <button id="SalvarEdicao">Atualizar</button>
+          <button type="reset" onclick="dialogEditar.close()">Cancelar</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
