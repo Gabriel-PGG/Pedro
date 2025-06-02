@@ -14,6 +14,7 @@ if (document.getElementById("FormLogin")) {
   });
 } else {
 
+
   if (localStorage.getItem("logado") !== "true") {
     window.location.href = "login.html";
   }
@@ -47,6 +48,11 @@ btnSalvar.addEventListener("click", function (e) {
   const data = document.getElementById("data").value;
   const temp = document.getElementById("temp").value;
 
+  if (data === "" || temp === "") {
+    alert("Por favor, preencha todos os campos.");
+    return;
+  }
+
   const registros = JSON.parse(localStorage.getItem("registros") || "[]");
   registros.push({ data, temp });
   localStorage.setItem("registros", JSON.stringify(registros));
@@ -76,6 +82,11 @@ document.getElementById("SalvarEdicao").addEventListener("click", function (e) {
   e.preventDefault();
   const data = document.getElementById("editarData").value;
   const temp = document.getElementById("editarTemp").value;
+
+  if (data === "" || temp === ""){
+    alert("Por favor, preencha todos os campos.");
+    return;
+  }
 
   const registros = JSON.parse(localStorage.getItem("registros") || "[]");
   registros[editandoId] = { data, temp };
