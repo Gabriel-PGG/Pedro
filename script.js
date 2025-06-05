@@ -14,7 +14,7 @@ if (document.getElementById("FormLogin")) {
   });
 } else {
 
-
+  
   if (localStorage.getItem("logado") !== "true") {
     window.location.href = "login.html";
   }
@@ -87,7 +87,7 @@ document.getElementById("SalvarEdicao").addEventListener("click", function (e) {
     alert("Por favor, preencha todos os campos.");
     return;
   }
-
+  
   const registros = JSON.parse(localStorage.getItem("registros") || "[]");
   registros[editandoId] = { data, temp };
   localStorage.setItem("registros", JSON.stringify(registros));
